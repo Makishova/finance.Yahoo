@@ -17,6 +17,16 @@ public class finance {
 @Test
 public  void test() throws InterruptedException {
 
+    /*
+    * This method gets the URL of Yahoo Finance
+    * Then enters the specified company codes to the search box
+    * Then gets the stock prices by first locating the webelements by Xpath
+    * and then getting their value attribute.
+    * then stores each one in a map of string-string as company code-current stock price
+    * then asserts each one in a foreach loop
+    * Each key - value has been printed out after being acquired just to make sure
+    */
+
     WebDriver driver;
     Map <String,String>stockPrices =new HashMap<>();
     WebDriverManager.chromedriver().setup();
